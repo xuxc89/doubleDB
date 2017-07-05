@@ -89,7 +89,7 @@ public class ExampleController {
 	 * ExampleController.java
 	 * 
 	 */
-	@Transactional
+//	@Transactional
 	public void transactionRollBack() {
 		/**
 		 * 事物拦截成功效果类似于提交后添加完毕后删除该条记录
