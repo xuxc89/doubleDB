@@ -10,8 +10,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cn.example.doubleDB.service.Example2Service;
-import cn.example.doubleDB.service.ExampleService;
+import cn.example.doubleDB.service.Transactional2Service;
+import cn.example.doubleDB.service.TransactionalService;
 
 @Service
 @RequestMapping("/example")
@@ -25,9 +25,9 @@ import cn.example.doubleDB.service.ExampleService;
 @WebAppConfiguration
 public class ExampleController {
 	@Autowired
-	private ExampleService exampleService;
+	private TransactionalService exampleService;
 	@Autowired
-	private Example2Service example2Service;
+	private Transactional2Service example2Service;
 	
 	/**
 	 * 明日解决 test对象未注入问题
