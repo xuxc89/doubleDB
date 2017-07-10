@@ -18,11 +18,7 @@ public class FinalController extends Example/* final 类无法继承 extends fin
 //	public void write() {
 //		System.out.println("重写");
 //	}
-	@Test
-	public void test() {
-		FinalController c = new FinalController();
-		c.write();
-	}
+	
 //	@Test
 	/**
 	 * 声明为final的数组无法改变，指容器中装载的数组类型大小不可变而与数组中的内容无关
