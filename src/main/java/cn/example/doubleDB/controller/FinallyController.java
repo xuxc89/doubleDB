@@ -16,7 +16,7 @@ import cn.example.doubleDB.service.FinallyService;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @WebAppConfiguration
-public class FinallyController {
+public final class FinallyController {
 
 	@Autowired
 	private FinallyService finallyService;
