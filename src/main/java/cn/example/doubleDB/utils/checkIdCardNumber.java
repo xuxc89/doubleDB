@@ -511,14 +511,14 @@ public class checkIdCardNumber {
 	        return sex;
 	    }
 
-	    @Test
+//	    @Test
 	    public void testgetSexAndBirth() {
 	        String id = "210202199011091213";
 	        System.out.println("出生日期：" + getBirthDay(id) + "\r\n" + "性  别：" + getSex(id));
 	    }
 	    @Test
 	    public void test(){
-	    	isValidate18Idcard("210204198708104326");
+	    	isValidate18Idcard("210204198508116636");
 	    }
 
 	}

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ReflectionController {
-
+	
 	public void getClassInfo() {
 		Class<String> plan_a = String.class;
 		Class<? extends String> plan_b = new String().getClass();
@@ -39,14 +39,13 @@ public class ReflectionController {
 	@Test
 	/**
 	 * 反编译
+	 * 
 	 * @author xxc
-	 * @since 2017年7月10日 上午11:49:44
-	 * ReflectionController.java
-	 * TODO
+	 * @since 2017年7月10日 上午11:49:44 ReflectionController.java TODO
 	 */
 	public void Decompile() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-		 Class<?> copy = Class.forName("cn.example.doubleDB.controller.FinallyController");
-//		Class<?> copy = Class.forName("java.lang.String");
+		Class<?> copy = Class.forName("cn.example.doubleDB.controller.FinallyController");
+		// Class<?> copy = Class.forName("java.lang.String");
 		// 获得注释注释
 		Annotation[] an = copy.getAnnotations();
 		for (Annotation item : an) {
@@ -82,7 +81,7 @@ public class ReflectionController {
 		Field[] fs = copy.getDeclaredFields();
 		for (Field one : fs) {
 			System.out.print("\t" + Modifier.toString(one.getModifiers()) + " ");
-//			 System.out.print(one.getType()+" ");
+			// System.out.print(one.getType()+" ");
 			System.out.print(one.getGenericType() + " ");
 			System.out.println(one.getName() + "()");
 		}
